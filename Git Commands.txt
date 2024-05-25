@@ -22,4 +22,4 @@ for the second time
 
 ***	git add .
 ***	git commit -m "commit_msg" 
-***	git push  
+***	git push  .
