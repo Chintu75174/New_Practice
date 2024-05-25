@@ -1,0 +1,25 @@
+For the First Time
+
+** git init
+ (a file is created where there is a link between local repo and remote repo)
+
+** git add .
+(all files are added to staging area wee can check the satatus using git status)
+
+** git commit -m "commit _ msg"
+(the staged files would be added to the local repo)
+
+** git add orgin <remote repo url>
+
+** git branch -M main
+(changing the branch to main)
+
+** git push origin main 
+
+
+****************************************************************************************
+for the second time
+
+***	git add .
+***	git commit -m "commit_msg" 
+***	git push  
