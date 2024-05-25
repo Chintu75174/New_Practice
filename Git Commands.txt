@@ -1,5 +1,8 @@
 For the First Time
 
+Repository 
+It is place which is used to store project source code at one place
+
 ** git init
  (a file is created where there is a link between local repo and remote repo)
 
@@ -23,3 +26,90 @@ for the second time
 ***	git add .
 ***	git commit -m "commit_msg" 
 ***	git push  .
+
+*****************************************************************************************
+**git log
+( command to check commit history)
+
+**git rm
+( It is used to remove a file from remote repository we have to commit it and then push it)
+
+**If we have commited a push to a remote repository but we realised that it is no longer required then how to revert the commited (deleting the commit)(same as rollback in database)
+**   Step 1 : Check the (git log) find the 14 char commit id 
+**   Step 2  :git revert <commit_id>  (i , esc + : wq  vim editor)
+**   Step 3 : git push
+
+
+*****************************************************************************************
+When multiple developer are working on the same file conflicts may happen
+On the same line we try to push code on which some other developer has already commited  the code then conflict would happen while the second developer trying to push 
+then we would have to us ** git  pull ** first 
+after executing the git pull command then the code will be disturbed (junk code will be created)
+
+Developer has to commit again the required code  
+
+
+********************************************************************************************
+
+** git restore 
+(to unload the files from the staging area)
+
+** git clone 
+download the project from remote repository to local one
+
+** git clone -b develop 
+** git clone -b <branch-name> <repo-url>
+to clone particularly develop branch 
+
+********************************************************************************************
+Git Branches
+(Different Banches for different streams in the college)
+(Git Branches is used to maintain multiple code bases in the project)
+
+For One Repo multiple Branches
+code should be different for different environment (dev , sit , uat , pre-prod , prod)
+multiple branches should be (main , develop , feature ,release )
+
+When multiple teams are woking parallely code integeration will become difficult
+Every team should have seperate code bases for easy maintainence
+
+(main/master , develop , feature , research, staging , release)
+
+Using branches multiple team can work parallely
+
+** git branch 
+(to check the current branch)
+
+** git checkout <branch_name>
+(to select the branch develop)
+
+
+We can merge changes from one branch to another branch using pull request.
+for every service a seperate repository will be created
+
+** git stash refer notes
+
+Staging area = which files are elgible for commit and which are not eligible for commit
+
+***********************************************************************
+
+git clone Vs git pull
+
+Git clone  is used to get complete project from remote repository to local repository
+
+git pull is used to get only the latest changes
+
+ 
+
+**********************************************************************
+
+git fetch Vs Git pull
+
+ pull -> are there any changes in the remote repository if changes are there in the remote repository it will download to the working tree directly
+
+fetch-> are there any changes available in the remote repository changes will come to local repository not to working tree
+
+*******************************************************************
+
+Git Merge Vs Git Rebase
+
