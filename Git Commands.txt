@@ -7,7 +7,7 @@ It is place which is used to store project source code at one place
  (a file is created where there is a link between local repo and remote repo)
 
 ** git add .
-(all files are added to staging area wee can check the satatus using git status)
+(all files are added to staging area we can check the status using git status)
 
 ** git commit -m "commit _ msg"
 (the staged files would be added to the local repo)
